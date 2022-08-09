@@ -1,20 +1,13 @@
 function compare(compString){
-    let tempStr = compString[0];
-    let firstLetter = tempStr[0],
-    lastLetter = tempStr[tempStr.length-1];
-    let result = [];
+    const result = [];
     for (let i = 1; i<compString.length; ++i){
-        tempStr = compString[i];
-        if(firstLetter === tempStr[0] && lastLetter === tempStr[tempStr.length -1]) {
-            result.push(true);}
-             else result.push(false);
-        firstLetter = tempStr[0];
-        lastLetter = tempStr[tempStr.length-1];
+        result.push(compString[i][0] === compString[i-1][0]  && 
+            compString[i][compString[i].length-1]  === compString[i-1][compString[i-1].length-1])
     }
     return(result);
 }
 
-let a = ["asd", "afffd", "cc", "kk"];
+let a = ["asd", "afffd", "cc", "kk", 'kasdasdasdk'];
 
 let b = compare(a);
 

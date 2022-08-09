@@ -43,6 +43,7 @@ function decSwitch(num) {
 
 function hundredsSwitch(num) {
   switch (num) {
+    case 0: return "";
     case 1: return "сто ";
     case 2: return "двести ";
     case 3: return "триста ";
@@ -116,5 +117,5 @@ function numToStr(num) {
 }
 
 
-let a = numToStr(54431);
+let a = numToStr(2011);
 console.log(a);
