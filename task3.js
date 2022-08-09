@@ -2,7 +2,7 @@ function toStr(arr){
     let result = '';
     let start;
     let count = 0;
-    for(let i = 0; i<arr.length-1; i++){
+    for(let i = 0; i < arr.length-1; i++){
         //console.log(arr[i], arr[i+1])
         if(arr[i+1] - arr[i] === 1 && count === 0){
             start = arr[i];

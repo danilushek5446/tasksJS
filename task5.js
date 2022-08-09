@@ -88,8 +88,11 @@ function numToStr(num) {
       j--;
       continue;
     } else if (j === 3) {
-      if (arr[i] > 2) result += oneSwitch(arr[i]); else {
-        if (arr[i] === 1) result += "одна тысяча "; else result += "две ";
+      if (arr[i] > 2) result += oneSwitch(arr[i]); 
+      else {
+        if (arr[i] === 1) {
+          result += "одна тысяча "; 
+        } else result += "две ";
       }
       if (arr[i] > 1 && arr[i] < 5) result += "тысячи "; else result += "тысяч ";
       j--;
