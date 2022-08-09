@@ -42,12 +42,14 @@ function numToStr(num) {
     } else if (j === 3) {
         if (arr[i] > 2){
           result += one[arr[i]]; 
-        } else if (arr[i] === 1) {
-            result += "одна тысяча "; 
-        } else if (arr[i] === 2){
-              result += "две ";
-        } else if (arr[i] > 1 && arr[i] < 5){
+        }
+        if (arr[i] === 2){
+          result += "две ";
+        } 
+        if (arr[i] > 1 && arr[i] < 5){
           result += "тысячи ";
+        } else if (arr[i] === 1) {
+          result += "одна тысяча "; 
         } else {
           result += "тысяч ";
         }
@@ -76,5 +78,5 @@ function numToStr(num) {
 }
 
 
-let a = numToStr(40245);
+let a = numToStr(1011);
 console.log(a);
