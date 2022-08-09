@@ -67,7 +67,7 @@ function numToStr(num) {
     num = Math.trunc(num);
   }
   let j = arr.length - 1;
-  for (let i = 0; i < arr.length; ++i) {
+  for (let i = 0; i < arr.length; i++) {
     if (flag === 1) {
       flag = 0;
       result += 'тысяч ';
